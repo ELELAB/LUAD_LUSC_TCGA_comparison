@@ -1,0 +1,16 @@
+Repository: LUADvsLUSC_TCGA
+Type: repository of published data 
+Title: Computational analyses of TCGA lung cancer datasets profiled with RNASEQ
+Version: XX
+Depends: R (>= 3.3.1)
+Imports: limma, sva, openxlsx,
+##scales, ggplot2, dendextend, heatmap.plus, reshape, gdata, plyr, data.table, RColorBrewer, squash, survminer, car
+Date: 2018-02-12
+Author: Marta Lucchetta, Elena Papaleo
+Maintainer: Marta Lucchetta <malu@cancer.dk>, Elena Papaleo <elena.papaleo.78@gmail.com>
+Description: The repository was made with intent of openly sharing both data and R-scripts used in analysis in relation to the publication.
+License: GPL (>=3)
+NeedsCompilation: no
+URL:https://github.com/ELELAB/LUADvsLUSC_TCGA/
+BugReports: https://github.com/ELELAB/LUADvsLUSC_TCGA/issues/
+~                       
