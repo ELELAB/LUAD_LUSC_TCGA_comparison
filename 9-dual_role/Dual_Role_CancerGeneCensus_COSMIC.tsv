@@ -1,0 +1,73 @@
+Gene.Symbol	Name	Entrez.GeneId	Genome.Location	Somatic	Germline	Tumour.Types.Somatic.	Tumour.Types.Germline.	Role.in.Cancer	Mutation.Types	Synonyms
+APOBEC3B	apolipoprotein B mRNA editing enzyme catalytic subunit 3B	9582	22:38982454-38992445		yes		breast cancer	oncogene, TSG	D	9582,APOBEC1L,APOBEC3B,ARCD3,ARP4,DJ742C19_2,ENSG00000179750,FLJ21201,PHRBNL,Q9UH17,_phorbolin 3_,bK150C2_2
+ARNT	aryl hydrocarbon receptor nuclear translocator	405	1:150812021-150876567	yes		AML		oncogene, TSG, fusion	T	405,ARNT,ENSG00000143437,HIF-1beta,HIF1B,HIF1BETA,P27540,TANGO
+ATP1A1	ATPase, Na+/K+ transporting, alpha 1 polypeptide	476	1:116373512-116404444	yes		adrenal aldosterone producing adenoma		oncogene, TSG	Mis, O	476,ATP1A1,ENSG00000163399,MGC3285,MGC51750,P05023
+BCL11B	B-cell CLL/lymphoma 11B  (CTIP2)	64919	14:99174151-99271218	yes		T-ALL		oncogene, TSG, fusion	T	64919,BCL11B,CTIP-2,CTIP2,ENSG00000127152,Q9C0K0,hRIT1-alpha
+BCL9L	B-cell CLL/lymphoma 9-like	283149	11:118898415-118909939	yes		colorectal cancer, endometrial carcinoma, gastric cancer		oncogene, TSG	Mis, F	283149,BCL9-2,BCL9L,DLNB11,ENSG00000186174
+BCORL1	BCL6 corepressor-like 1	63035	X:130005232-130056136	yes		AML, HNSCC		oncogene, TSG	Mis, N, F	63035,B930011H20Rik,BCORL1,ENSG00000085185,FLJ11362,RP3-510O21_1
+BIRC3	baculoviral IAP repeat-containing 3	330	11:102324510-102337102	yes		CLL, MALT, MCL, MM		oncogene, TSG, fusion	D, F, N, T, Mis	330,AIP1,API2,BIRC3,CIAP2,ENSG00000023445,HAIP1,HIAP1,MALT2,MIHC,Q13489,RNF49,cIAP2,hiap-1
+BMPR1A	bone morphogenetic protein receptor, type IA	657	10:86876019-86923719		yes		gastrointestinal polyps	oncogene, TSG	Mis, N, F	657,ACVRLK3,ALK3,BMPR1A,CD292,ENSG00000107779,P36894
+BTK	Bruton agammaglobulinemia tyrosine kinase	695	X:101349885-101375284	yes		CLL, mantle cell lymphoma, WM		oncogene, TSG	Mis	695,AGMX1,AT,ATK,BPK,BTK,ENSG00000010671,IMD1,MGC126261,MGC126262,PSCTK1,Q06187,RP1-164F3_2,XLA
+CBL	Cas-Br-M (murine) ecotropic retroviral transforming	867	11:119206418-119299781	yes		AML, JMML, MDS		oncogene, TSG, fusion	T, Mis, S, O	867,C-CBL,CBL,CBL2,ENSG00000110395,RNF55
+CBLC	Cas-Br-M (murine) ecotropic retroviral transforming sequence c	23624	19:44777932-44800443	yes		AML		oncogene, TSG	M	23624,CBL-3,CBL-SL,CBLC,ENSG00000142273,Q9ULV8,RNF57
+CDKN1A	cyclin dependent kinase inhibitor 1A	1026	6:36684102-36685800	yes		bladder cancer		oncogene, TSG	F, N	1026,CAP20,CDKN1,CDKN1A,CIP1,ENSG00000124762,MDA-6,P21,P38936,SDI1,WAF1,p21CIP1
+CIC	capicua homolog	23152	19:42284705-42295191	yes		oligodendroglioma, soft tissue sarcoma		oncogene, TSG, fusion	Mis, F, S,T	23152,CIC,ENSG00000079432,KIAA0306,Q96RK0
+CREBBP	CREB binding protein (CBP)	1387	16:3727718-3879916	yes		ALL, AML, DLBCL, B-NHL		oncogene, TSG, fusion	T, N, F, Mis, O	1387,CBP,CREBBP,ENSG00000005339,RSTS,RTS
+CUX1	cut-like homeobox 1	1523	7:101817640-102249042	yes		endometrial, melanoma, colorectal, AML, MDS, other tumour types		oncogene, TSG	N,F,S,Mis,O,T	1523,CASP,CDP,COY1,CUX,CUX1,ENSG00000160967,Nbla10317,P39880,p100,p110,p200,p75
+DAXX	death-domain associated protein	1616	6:33318743-33321925	yes		pancreatic neuroendocrine tumour, paediatric glioblastoma		oncogene, TSG	Mis, F, N	1616,BING2,DAP6,DAQB-126H3_2,DAXX,ENSG00000206206,MGC126245,MGC126246,Q9UER7
+DDB2	damage-specific DNA binding protein 2	1643	11:47215137-47238849		yes		skin basal cell, skin squamous cell, melanoma	oncogene, TSG	Mis, N	1643,DDB2,ENSG00000134574,FLJ34321,Q92466
+ELF4	E74-like factor 4 (ets domain transcription factor)	2000	X:130066721-130081330	yes		AML		oncogene, TSG, fusion	T	2000,ELF4,ELFR,ENSG00000102034,MEF,Q99607,RP3-510O21_2
+EPAS1	endothelial PAS domain protein 1	2034	2:46297912-46384660	yes		paraganglioma, pheochromocytoma, central nervous system hemangioblastomas		oncogene, TSG	Mis	2034,ENSG00000116016,EPAS1,HIF2A,MOP2,PASD2,Q99814
+ERBB4	erb-b2 receptor tyrosine kinase 4	2066	2:211383615-212538530	yes	yes	melanoma, gastric, NSCLC		oncogene, TSG	Mis, N	2066,ENSG00000178568,ERBB4,HER4,MGC138404,Q15303,p180erbB4
+ESR1	estrogen receptor 1	2099	6:151807913-152098966	yes		breast		oncogene, TSG, fusion	Mis	2099,DKFZp686N23123,ENSG00000091831,ER,ESR,ESR1,ESRA,Era,NR3A1,RP1-130E4_1
+EZH2	enhancer of zeste homolog 2	2146	7:148807646-148847298	yes		DLBCL		oncogene, TSG	Mis	2146,ENSG00000106462,ENX-1,EZH2,MGC9169,Q15910
+FES	FES proto-oncogene, tyrosine kinase	2242	15:90885046-90895558	yes		HNSCC, ovarian carcinoma		oncogene, TSG	Mis, F	2242,ENSG00000182511,FES,FPS,P07332
+FOXL2	forkhead box L2	668	3:138945592-138946722	yes		granulosa-cell tumour of the ovary		oncogene, TSG	Mis	668,BPES,BPES1,ENSG00000183770,FOXL2,P58012,PFRK,PINTO,POF3
+FOXO1	forkhead box O1	2308	13:40555680-40666212	yes		alveolar rhabdomyosarcoma		oncogene, TSG, fusion	T	2308,ENSG00000150907,FKH1,FKHR,FOXO1,FOXO1A,Q12778
+FOXO3	forkhead box O3	2309	6:108561209-108664855	yes		AL		oncogene, TSG, fusion	T	2309,AF6q21,DKFZp781A0677,ENSG00000118689,FKHRL1,FKHRL1P2,FOXO2,FOXO3,FOXO3A,MGC12739,MGC31925,O43524
+FOXO4	forkhead box O4	4303	X:71096529-71102084	yes		AL, soft tissue sarcoma		oncogene, TSG, fusion	T	4303,AFX1,ENSG00000184481,FOXO4,MLLT7,P98177
+GATA1	GATA binding protein 1 (globin transcription factor 1)	2623	X:48791110-48794164	yes		megakaryoblastic leukaemia of Downs syndrome		oncogene, TSG	Mis, F	2623,ENSG00000102145,ERYF1,GATA1,GF1,NFE1,P15976
+GATA3	GATA binding protein 3	2625	10:8055656-8074023	yes		breast		oncogene, TSG	F, N, S	2625,ENSG00000107485,GATA3,HDR,MGC2346,MGC5199,MGC5445
+GPC3	glypican 3	2719	X:133536124-133985449		yes		Wilms tumour	oncogene, TSG	D, Mis, N, F, S	2719,AC002420_1,DGSX,ENSG00000147257,GPC3,OCI-5,P51654,SDYS,SGB,SGBS,SGBS1
+HOXA11	homeo box A11	3207	7:27182796-27185144	yes		CML		oncogene, TSG, fusion	T	3207,ENSG00000005073,HOX1,HOX1I,HOXA11,P31270
+HOXA9	homeo box A9	3205	7:27163603-27165457	yes		AML*		oncogene, TSG, fusion	T	3205,ENSG00000078399,HOX1,HOX1G,HOXA9,P31269
+IRF4	interferon regulatory factor 4	3662	6:393154-407599	yes		MM		oncogene, TSG, fusion	T	3662,ENSG00000137265,IRF4,LSIRF,Q15306
+IRS4	insulin receptor substrate 4	8471	X:108732571-108736344	yes		glioma, rhabdomyosarcoma, melanoma, breast cancer, T-ALL		oncogene, TSG	Mis, F, T	8471,ENSG00000133124,IRS-4,IRS4,PY160
+JAK1	Janus kinase 1	3716	1:64834562-64886264	yes		ALL		oncogene, TSG	Mis	3716,ENSG00000162434,JAK1,JAK1A,JAK1B,JTK3,P23458
+KDM6A	lysine (K)-specific demethylase 6A, UTX	7403	X:44873552-45111411	yes		renal cell carcinoma, bladder carcinoma, oesophageal SCC, MM, medulloblastoma, T-ALL, other tumour types		oncogene, TSG	D, N, F, S	7403,DKFZp686A03225,ENSG00000147050,KDM6A,MGC141941,O15550,RP13-886N14_3,UTX,bA386N14_2
+KLF4	Kruppel-like factor 4	9314	9:107485751-107489172	yes		meningioma		oncogene, TSG	Mis	9314,ENSG00000136826,EZF,GKLF,KLF4,O43474
+KMT2D	lysine (K)-specific methyltransferase 2D	8085	12:49021780-49055324	yes		medulloblastoma, renal		oncogene, TSG	N, F, Mis	8085,ENSG00000167548,KMT2D,MLL2
+LEF1	lymphoid enhancer binding factor 1	51176	4:108063629-108167767	yes		B-ALL, T-ALL, eyelid sebaceous carcinoma, AML, lymphomas		oncogene, TSG	Mis, N	51176,DKFZp586H0919,ENSG00000138795,LEF1,Q9UJU2,TCF1ALPHA
+MALAT1	metastasis associated lung adenocarcinoma transcript 1 ( lnc-RNA; non-protein coding)	378938	11:65502644-65502817	yes		renal cell carcinoma (childhood epithelioid), lung		oncogene, TSG, fusion	T	378938,MALAT1,PRO1073,Q9UHZ2
+MAP2K4	mitogen-activated protein kinase kinase 4	6416	17:12020887-12141260	yes		pancreatic, breast, colorectal		oncogene, TSG	D, Mis, N	6416,ENSG00000065559,JNKK,JNKK1,MAP2K4,MAPKK4,MEK4,MKK4,P45985,PRKMK4,SEK1,SERK1
+MAP3K1	mitogen-activated protein kinase kinase kinase 1, E3 ubiquitin protein ligase	4214	5:56152434-56189507	yes		luminal A breast		oncogene, TSG	N, F, Mis, O, S	
+MAP3K13	mitogen-activated protein kinase kinase kinase 13	9175	3:185428582-185482456	yes		breast		oncogene, TSG	F	9175,ENSG00000073803,LZK,MAP3K13,MGC133196
+MKL1	megakaryoblastic leukemia (translocation) 1	57591	22:40411390-40463227	yes		acute megakaryocytic leukaemia		oncogene, TSG, fusion	T	57591,BSAC,ENSG00000196588,MKL1,MRTF-A,Q969V6
+NFE2L2	nuclear factor (erythroid-derived 2)-like 2 (NRF2)	4780	2:177230785-177264576	yes		NSCLC, HNSCC		oncogene, TSG	Mis	4780,ENSG00000116044,NFE2L2,NRF2,Q16236
+NFKB2	nuclear factor of kappa light polypeptide gene enhancer in B-cells 2 (p49/p100)	4791	10:102395960-102402376	yes		B-NHL		oncogene, TSG, fusion	T	4791,ENSG00000077150,LYT-10,LYT10,NFKB2
+NKX2-1	NK2 homeobox 1	7080	14:36517278-36519357	yes		NSCLC		oncogene, TSG	A	7080,BCH,BHC,ENSG00000136352,NK-2,NKX2-1,NKX2A,NKX2_1,P43699,TEBP,TITF1,TTF-1
+NOTCH1	Notch homolog 1, translocation-associated (Drosophila) (TAN1)	4851	9:136496071-136545786	yes		T-ALL, breast, bladder, skin SCC, lung SCC, head and neck SCC		oncogene, TSG, fusion	T, Mis, O	4851,ENSG00000148400,NOTCH1,P46531,TAN1,hN1
+NOTCH2	Notch homolog 2	4853	1:119915306-120069406	yes		marginal zone lymphoma, DLBCL, bladder		oncogene, TSG	N, F, Mis	4853,AGS2,ENSG00000134250,NOTCH2,Q04721,hN2
+NTRK1	neurotrophic tyrosine kinase, receptor, type 1	4914	1:156860935-156881642	yes		papillary thyroid, Spitzoid tumour		oncogene, TSG, fusion	T, A	4914,DKFZp781I14186,ENSG00000198400,MTC,NTRK1,P04629,TRK,TRK1,TRKA,p140-TrkA
+PABPC1	poly(A) binding protein cytoplasmic 1	26986	8:100704298-100721583	yes		HNSCC, biliary tract carcinoma		oncogene, TSG	Mis, F	26986,ENSG00000070756,P11940,PAB1,PABP,PABP1,PABPC1,PABPC2,PABPL1
+PAX5	paired box gene 5 (B-cell lineage specific activator protein)	5079	9:36840560-37034031	yes		NHL, ALL, B-ALL		oncogene, TSG, fusion	T, Mis, D, F, S	5079,BSAP,ENSG00000196092,PAX5,Q02548
+POLQ	DNA polymerase theta	10721	3:121432304-121546641	yes	yes	oral SCC	breast cancer	oncogene, TSG	Mis	10721,ENSG00000051341,POLQ
+PRKAR1A	protein kinase, cAMP-dependent, regulatory, type I, alpha (tissue specific extinguisher 1)	5573	17:68515400-68530449	yes	yes	papillary thyroid	myxoma, endocrine, papillary thyroid	oncogene, TSG, fusion	T, Mis, N, F, S	5573,CAR,CNC,CNC1,DKFZp779L0468,ENSG00000108946,MGC17251,P10644,PKR1,PPNAD1,PRKAR1,PRKAR1A,TSE1
+PTK6	protein tyrosine kinase 6	5753	20:63529536-63537314	yes		renal, gastric, head and neck, ovarian, others		oncogene, TSG	Mis, N	5753,BRK,ENSG00000101213,FLJ42088,PTK6,Q13882
+QKI	QKI, KH domain containing, RNA binding	9444	6:163415194-163570710	yes		angiocentric glioma, colorectal cancer		oncogene, TSG	Mis, F, T	9444,DKFZp586I0923,ENSG00000112531,Hqk,Q96PU8,QK,QK3,QKI
+RAD21	RAD21 homolog (S. pombe)	5885	8:116847500-116866729	yes		AML, endometrium, colorectal, lung		oncogene, TSG	Mis, N, F	5885,ENSG00000164754,FLJ25655,FLJ40596,HR21,HRAD21,KIAA0078,MCD1,NXP1,O60216,RAD21,SCC1,hHR21
+RECQL4	RecQ protein-like 4	9401	8:144511431-144517784		yes		osteosarcoma, skin basal cell, skin sqamous cell	oncogene, TSG	N, F, S	9401,ENSG00000160957,RECQ4,RECQL4,RTS,RecQ4
+RHOA	ras homolog family member A	387	3:49360209-49375589	yes		diffuse gastric, T cell lymphomas, paediatric Burkitt lymphoma		oncogene, TSG	Mis, F, O	387,ARH12,ARHA,ENSG00000067560,RHO12,RHOA,RHOH12,Rho12,RhoA
+RUNX1	runt-related transcription factor 1  (AML1)	861	21:34792135-35048899	yes		AML, pre B-ALL, T-ALL		oncogene, TSG, fusion	T	861,AML1,AMLCR1,CBFA2,ENSG00000159216,PEBP2A2,Q01196,RUNX1
+RUNX1T1	runt-related transcription factor 1; translocated to, 1 (cyclin D-related)	862	8:91960242-92017340	yes		AML		oncogene, TSG, fusion	T	862,ENSG00000079102,RUNX1T1
+STAT5B	signal transducer and activator of transcription 5B	6777	17:42201738-42232127	yes		large granular lymphocytic leukaemia, skin basal cell, APL		oncogene, TSG, fusion	Mis, O, T	6777,ENSG00000173757,P51692,STAT5,STAT5B
+SUZ12	suppressor of zeste 12 homolog (Drosophila)	23512	17:31937247-31999003	yes		endometrial stromal tumour		oncogene, TSG, fusion	T	23512,CHET9,ENSG00000178691,JJAZ1,KIAA0160,Q15022,SUZ12
+TBL1XR1	transducin (beta)-like 1 X-linked receptor 1	79718	3:177025498-177064977	yes		splenic marginal zone lymphoma, primary central nervous system lymphoma, colorectal carcinoma, gallbladder carcinoma		oncogene, TSG, fusion	F, Mis	79718,C21,DC42,FLJ12894,IRA1,TBL1XR1,TBLR1
+TBX3	T-box 3	6926	12:114671841-114683200	yes		breast, large intestine, skin		oncogene, TSG	Mis, N, F, O	6926,ENSG00000135111,O15119,TBX3,TBX3-ISO,UMS,XHL
+TCF3	transcription factor 3 (E2A immunoglobulin enhancer binding factors E12/E47)	6929	19:1611707-1650248	yes		pre B-ALL		oncogene, TSG, fusion	T	6929,E2A,ENSG00000071564,ITF1,MGC129647,MGC129648,P15923,TCF3
+TERT	telomerase reverse transcriptase	7015	5:1253728-1294989	yes	yes	melanoma, glioblastoma, hepatocellular carcinoma, bladder, skin basal cell, skin squamous cell, mesothelioma, medulloblastoma, other tumour types	melanoma	oncogene, TSG	Promoter Mis	7015,EST2,O14746,O14783,Q2XS35,Q8N6C3,Q8NG46,TCS1,TERT,TP2,TRT,hEST2
+TET1	tet methylcytosine dioxygenase 1	80312	10:68572340-68691815	yes		AML		oncogene, TSG, fusion	T	80312,CXXC6,ENSG00000138336,KIAA1676,LCX,Q8NFU7,TET1,bA119F7_1
+TP53	tumor protein p53	7157	17:7669609-7676594	yes	yes	breast, colorectal, lung, sarcoma, adrenocortical, glioma, Spitzoid tumour, multiple other tumour types	breast, sarcoma, adrenocortical carcinoma, glioma, multiple other tumour types	oncogene, TSG, fusion	Mis, N, F, T	7157,ENSG00000141510,LFS1,P04637,P53,TP53,TRP53,p53
+TP63	tumor protein p63	8626	3:189631516-189894502	yes	yes	HNSCC, DLBCL	NSCLC	oncogene, TSG	Mis, N, T	8626,B(p51A),B(p51B),EEC3,ENSG00000073282,KET,LMS,OFC8,Q9H3D4,RHS,SHFM4,TP63,TP73L,p51,p63,p73H,p73L
+TRIM24	tripartite motif containing 24	8805	7:138460549-138584951	yes		APL		oncogene, TSG, fusion	T	8805,ENSG00000122779,O15164,PTC6,RNF82,TF1A,TIF1,TIF1A,TIF1ALPHA,TRIM24,Tif1a,hTIF1
+WT1	Wilms tumour 1 gene	7490	11:32389058-32435141	yes	yes	Wilms tumour, desmoplastic small round cell tumour	Wilms tumour	oncogene, TSG, fusion	D, Mis, N, F, S, T	7490,ENSG00000184937,GUD,WAGR,WIT-2,WT1,WT33
