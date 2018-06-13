@@ -1,0 +1,16 @@
+CEMiTool Object
+- Number of modules: 7 
+- Modules (data.frame: 1218x2): 
+   genes modules
+1   KRT5      M1
+2  KRT6A      M1
+3 COL1A1      M3
+- Expression file: data.frame with 14477 genes and 356 samples
+- Selected data: 1218 genes selected
+- Gene Set Enrichment Analysis: null
+- Over Representation Analysis: null
+- Profile plot: ok
+- Enrichment plot: null
+- ORA barplot: null
+- Beta x R2 plot: null
+- Mean connectivity plot: null

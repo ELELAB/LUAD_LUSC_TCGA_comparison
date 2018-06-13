@@ -1,0 +1,16 @@
+CEMiTool Object
+- Number of modules: 5 
+- Modules (data.frame: 1272x2): 
+  genes        modules
+1 SFTPB             M1
+2 ADAM6 Not.Correlated
+3  CD74             M2
+- Expression file: data.frame with 14464 genes and 310 samples
+- Selected data: 1272 genes selected
+- Gene Set Enrichment Analysis: null
+- Over Representation Analysis: null
+- Profile plot: ok
+- Enrichment plot: null
+- ORA barplot: null
+- Beta x R2 plot: null
+- Mean connectivity plot: null

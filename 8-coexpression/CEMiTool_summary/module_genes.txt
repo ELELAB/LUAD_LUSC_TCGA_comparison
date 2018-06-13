@@ -1,0 +1,7 @@
+   genes        modules
+1  SFTPB             M1
+2  ADAM6 Not.Correlated
+3   CD74             M2
+4    FN1             M3
+5 COL1A1             M3
+6 S100A6             M1
