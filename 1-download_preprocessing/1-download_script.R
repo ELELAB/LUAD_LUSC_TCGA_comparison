@@ -1,7 +1,9 @@
 #the user needs to run the script in a folder where already the LUAD/all LUAD/paired LUAD/unpaired LUSC/all LUSC/paired
-#and LUSC/unpaired sub-folders have been created
-
+#and LUSC/unpaired sub-folders have been created - see also README file
+#the user also will need to work with the same structure of directories used in this repository to be able to run the scripts as they are
+#setwd("~/1-download_script.R")
 source("TCGAbiolinks_functions.R")
+
 library(TCGAbiolinks)
 library(SummarizedExperiment)
 

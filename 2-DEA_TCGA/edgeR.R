@@ -1,3 +1,8 @@
+##the user needs to run the script in a folder where already the LUAD/all LUAD/paired LUAD/unpaired LUSC/all LUSC/paired
+#and LUSC/unpaired sub-folders have been created - see also README file
+#the user also will need to work with the same structure of directories used in this repository to be able to run the scripts as they are
+#setwd("~/2-DEA_TCGA")
+
 source("TCGAbiolinks_functions.R")
 
 #------------------------------------------------------------------------------------
@@ -63,7 +68,7 @@ write.table(down,down_name, sep = "\t", col.names = FALSE, row.names = FALSE, qu
 # LUSC paired
 #-------------------------------------------------------------------------------
 
-dataframe_LUSC <- get(load("./1-download_preprocessing/LUSC/paired/LUSC_PreprocessedData_paired_tumorPurity.rda"))
+dataframe_LUSC <- get(load("../1-download_preprocessing/LUSC/paired/LUSC_PreprocessedData_paired_tumorPurity.rda"))
 my_IDs <- get_IDs(dataframe_LUSC)
 #check the number of normal and tumor samples after tumor replicates removing
 length(which(my_IDs$condition=="cancer"))
@@ -78,7 +83,7 @@ edgeR_paired(dataframe_LUSC,edgeR_name,up_name,down_name)
 # LUAD paired
 #-------------------------------------------------------------------------------
 
-dataframe_LUAD <- get(load("./1-download_preprocessing/LUAD/paired/LUAD_PreprocessedData_paired_tumorPurity.rda"))
+dataframe_LUAD <- get(load("../1-download_preprocessing/LUAD/paired/LUAD_PreprocessedData_paired_tumorPurity.rda"))
 my_IDs <- get_IDs(dataframe_LUAD)
 length(which(my_IDs$condition=="cancer"))
 length(which(my_IDs$condition=="normal"))
@@ -142,7 +147,7 @@ edgeR_tss <- function(dataframe,edgeR_name,up_name,down_name){
 # LUAD all 
 #--------------------------------------------------------------------------
 
-dataframe_LUAD <- get(load("./1-download_preprocessing/LUAD/all/LUAD_PreprocessedData_all_tumorPurity.rda"))
+dataframe_LUAD <- get(load("../1-download_preprocessing/LUAD/all/LUAD_PreprocessedData_all_tumorPurity.rda"))
 my_IDs <- get_IDs(dataframe_LUAD)
 length(which(my_IDs$condition=="cancer"))
 length(which(my_IDs$condition=="normal"))
@@ -156,7 +161,7 @@ edgeR_tss(dataframe_LUAD,edgeR_name,up_name,down_name)
 #------------------------------------------------------------------------------
 # LUAD unpaired
 #--------------------------------------------------------------------------
-dataframe_LUAD <- get(load("./1-download_preprocessing/LUAD/unpaired/LUAD_PreprocessedData_unpaired_tumorPurity.rda"))
+dataframe_LUAD <- get(load("../1-download_preprocessing/LUAD/unpaired/LUAD_PreprocessedData_unpaired_tumorPurity.rda"))
 my_IDs <- get_IDs(dataframe_LUAD)
 length(which(my_IDs$condition=="cancer"))
 length(which(my_IDs$condition=="normal"))
@@ -170,7 +175,7 @@ edgeR_tss(dataframe_LUAD,edgeR_name,up_name,down_name)
 #-------------------------------------------------------------------------------
 # LUSC all
 #-------------------------------------------------------------------------------
-dataframe_LUSC <- get(load("./1-download_preprocessing/LUSC/all/LUSC_PreprocessedData_all_tumorPurity.rda"))
+dataframe_LUSC <- get(load("../1-download_preprocessing/LUSC/all/LUSC_PreprocessedData_all_tumorPurity.rda"))
 my_IDs <- get_IDs(dataframe_LUSC)
 length(which(my_IDs$condition=="cancer"))
 length(which(my_IDs$condition=="normal"))
@@ -185,7 +190,7 @@ edgeR_tss(dataframe_LUSC,edgeR_name,up_name,down_name)
 # LUSC unpaired
 #---------------------------------------------------------------------------
 
-dataframe_LUSC <- get(load("./1-download_preprocessing/LUSC/unpaired/LUSC_PreprocessedData_unpaired_tumorPurity.rda"))
+dataframe_LUSC <- get(load("../1-download_preprocessing/LUSC/unpaired/LUSC_PreprocessedData_unpaired_tumorPurity.rda"))
 my_IDs <- get_IDs(dataframe_LUSC)
 length(which(my_IDs$condition=="cancer"))
 length(which(my_IDs$condition=="normal"))
