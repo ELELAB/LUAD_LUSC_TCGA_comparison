@@ -1,4 +1,6 @@
-
+#this script needs to be run after performing the DEA with the three pipelines
+##the user also will need to work with the same structure of directories used in this repository to be able to run the scripts as they are
+#setwd("~/2-DEA_TCGA")
 #--------------------------------------------------------------------------------------
 # function to create a dataframe with up-regulated genes detected by only edgeR_TCGAbiolinks
 # in the rows and logFC and FDR for the three methods in the columns
@@ -41,7 +43,7 @@ dataframe.edgeR <- read.csv("./LUAD/paired/edgeR_LUAD_paired_tumorPurity.csv",ro
 dataframe.limma <- read.csv("./LUAD/paired/limma_LUAD_paired_tumorPurity.csv",row.names = 1)
 dataframe.edgeRTCGA<- read.csv("./LUAD/paired/edgeR_TCGA_LUAD_paired_tumorPurity.csv",row.names = 1)
 # get the up-regulated genes detected by edgeR_TCGAbiolinks in paired dataset
-genes <- read.table("paired/no_overlap_up_paired_TCGAedgeR_LUAD.txt")
+genes <- read.table("./plots_DEA_comparison_methods/no_overlap_up_paired_plots_DEA_comparison_methods_TCGAedgeR_LUAD.txt")
 nameFile <- "comparison_FC_FDR_up_paired_LUAD"
 output<-comparison_FC_FDR_3methods(dataframe.edgeR,dataframe.limma,dataframe.edgeRTCGA,genes,nameFile)
 
@@ -52,7 +54,7 @@ output<-comparison_FC_FDR_3methods(dataframe.edgeR,dataframe.limma,dataframe.edg
 dataframe.edgeR<- read.csv("./LUSC/paired/edgeR_LUSC_paired_tumorPurity.csv",row.names = 1)
 dataframe.limma <- read.csv("./LUSC/paired/limma_LUSC_paired_tumorPurity.csv",row.names = 1)
 dataframe.edgeRTCGA <- read.csv("./LUSC/paired/edgeR_TCGA_LUSC_paired_tumorPurity.csv",row.names = 1)
-genes <- read.table("paired/no_overlap_up_paired_TCGAedgeR_LUSC.txt")
+genes <- read.table("./plots_DEA_comparison_methods/no_overlap_up_paired_plots_DEA_comparison_methods_TCGAedgeR_LUSC.txt")
 nameFile <- "comparison_FC_FDR_up_paired_LUSC"
 output<-comparison_FC_FDR_3methods(dataframe.edgeR,dataframe.limma,dataframe.edgeRTCGA,genes,nameFile)
 
