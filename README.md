@@ -46,6 +46,6 @@ NOTES:
 a) We suggest to use Rstudio to run the scripts of interest so that you can follow the analyses one line at the time and digest the results.
 
 
-b) N.B. It is vital that the script XXX_Functions.R is always run as the initial script as this scripts contains packages and costum functions needed for running the rest of the code.
+b) N.B. It is vital that the script TCGAbiolinks_functions.R is always run as the initial script as this scripts contains packages and costum functions needed for running the rest of the code.
 
 c) The folder with the original data downloaded by TCGA in October 2016 for this study is too big to be shared on Github and it is available here for download:
