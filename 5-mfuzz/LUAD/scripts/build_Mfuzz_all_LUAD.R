@@ -1,10 +1,13 @@
+#remember to setwd("~/5-mfuzz")
+#unzip the .gz files in the LUAD/data and LUSC/data folders that are used as inputs
 # Build consensus matrix (all genes expression and log2fc values in LUAD)
 # load raw tables
 
 library(TCGAbiolinks)
+library(Mfuzz)
 
 #extract the NT samples
-data <- get(load("../LUAD/data/LUAD_Illumina_HiSeq_all.rda"))
+data <- get(load("./LUAD/data/LUAD_Illumina_HiSeq_all.rda"))
 NT_barcodes <- TCGAquery_SampleTypes(colnames(data),"NT")
 
 
@@ -26,10 +29,8 @@ dataPrep<-TCGAanalyze_Preprocessing(object = dataPrep1.luad,
 # write the preprocessed NT expression matrix
 write.table(file="LUAD_NT_Preprocessed.tsv",dataPrep,col.names=T,row.names=T,sep='\t')
 
-
-
-M1 <- read.table("/data/user/shared_projects/luad_lusc_2018/isabelle/mfuzz_April2018/LUAD/data/data_LUAD_all_noDE.csv",header=T,sep=',',row.names=1,check.names=F)
-M2 <- read.table("/data/user/shared_projects/luad_lusc_2018/isabelle/mfuzz_April2018/LUAD/data/data_LUAD_all_DE.csv",header=T,sep=',',row.names=1,check.names=F) 
+M1 <- read.table("./LUAD/data/data_LUAD_all_noDE.csv",header=T,sep=',',row.names=1,check.names=F)
+M2 <- read.table("./LUAD/data/data_LUAD_all_DE.csv",header=T,sep=',',row.names=1,check.names=F) 
 M3 <- rbind(M1,M2)
 # reorder concatenated matrix
 M3 <- M3[order(rownames(M3)),]
@@ -47,8 +48,8 @@ consensus_matrix_LUAD <- read.table('LUAD_all_consensus.csv',sep=',',header=TRUE
 NT_index <- which(colnames(consensus_matrix_LUAD) %in% NT_barcodes)
 
 # load clinical data to map barcode with stages
-clinical_LUSC <- read.csv("/data/user/shared_projects/luad_lusc_2018/isabelle/mfuzz_April2018/LUSC/data/TCGA-LUSC_clinical-Apr6.csv",sep=',',header=TRUE)
-clinical_LUAD <- read.csv("/data/user/shared_projects/luad_lusc_2018/isabelle/mfuzz_April2018/LUAD/data/TCGA-LUAD_clinical-Apr6.csv",sep=',',header=TRUE)
+clinical_LUSC <- read.csv("./LUSC/data/TCGA-LUSC_clinical-Apr6.csv",sep=',',header=TRUE)
+clinical_LUAD <- read.csv("./LUAD/data/TCGA-LUAD_clinical-Apr6.csv",sep=',',header=TRUE)
 clinical <- rbind(clinical_LUSC, clinical_LUAD)
 
 # extract first 3 elements of sample ID corresponding to barcode
@@ -134,7 +135,7 @@ stage_averages_LUAD <- read.table('stage_averages_LUAD.csv',sep=',',header=TRUE,
 stage_averages_LUAD <- as.matrix(stage_averages_LUAD)
 
 
-library(Mfuzz)
+
 
 exprSet_LUAD=ExpressionSet(assayData=stage_averages_LUAD)
 
@@ -150,7 +151,7 @@ cl <- mfuzz(exprSet_LUAD.s,c=6,m=m1_LUAD)
 mfuzz.plot(exprSet_LUAD.s,cl=cl,mfrow=c(3,2))
 
 
-current_test <- "/data/user/shared_projects/luad_lusc_2018/isabelle/mfuzz_April2018/LUAD/results/Mfuzz_plots/"
+current_test <- "./LUAD/results/Mfuzz_plots/"
 pdf(file=paste0(current_test,"LUAD_NT_4stages_6clusters",".pdf"))
 lab <-c( 'NT','I', 'II', 'III', 'IV') 
 
@@ -159,12 +160,12 @@ dev.off()
 
 cores<-acore(exprSet_LUAD.s,cl=cl,min.acore=0.56)
 
-write.csv(file = "/data/user/shared_projects/luad_lusc_2018/isabelle/mfuzz_April2018/LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster1.csv", x = cores[[1]], quote = FALSE, row.names=FALSE)
-write.csv(file = "/data/user/shared_projects/luad_lusc_2018/isabelle/mfuzz_April2018/LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster2.csv", x = cores[[2]], quote = FALSE, row.names=FALSE)
-write.csv(file = "/data/user/shared_projects/luad_lusc_2018/isabelle/mfuzz_April2018/LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster3.csv", x = cores[[3]], quote = FALSE, row.names=FALSE)
-write.csv(file = "/data/user/shared_projects/luad_lusc_2018/isabelle/mfuzz_April2018/LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster4.csv", x = cores[[4]], quote = FALSE, row.names=FALSE)
-write.csv(file = "/data/user/shared_projects/luad_lusc_2018/isabelle/mfuzz_April2018/LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster5.csv", x = cores[[5]], quote = FALSE, row.names=FALSE)
-write.csv(file = "/data/user/shared_projects/luad_lusc_2018/isabelle/mfuzz_April2018/LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster6.csv", x = cores[[6]], quote = FALSE, row.names=FALSE)
+write.csv(file = "./LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster1.csv", x = cores[[1]], quote = FALSE, row.names=FALSE)
+write.csv(file = "./LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster2.csv", x = cores[[2]], quote = FALSE, row.names=FALSE)
+write.csv(file = "./LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster3.csv", x = cores[[3]], quote = FALSE, row.names=FALSE)
+write.csv(file = "./LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster4.csv", x = cores[[4]], quote = FALSE, row.names=FALSE)
+write.csv(file = "./LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster5.csv", x = cores[[5]], quote = FALSE, row.names=FALSE)
+write.csv(file = "./LUAD/results/Mfuzz_clusters/LUAD_NT_4stages_cluster6.csv", x = cores[[6]], quote = FALSE, row.names=FALSE)
 
 
 #make a list object with gene names for each cluster
