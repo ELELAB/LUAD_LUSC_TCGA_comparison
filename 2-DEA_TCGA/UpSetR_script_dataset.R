@@ -1,3 +1,7 @@
+#the user also will need to work with the same structure of directories used in this repository to be able to run the scripts as they are
+#setwd("~/2-DEA_TCGA")
+#this script needs to be run after performing the DEA with the three pipelines
+
 library(UpSetR)
 
 
@@ -13,6 +17,8 @@ all <- read.table("./LUAD/all/up_limma_LUAD_all_tss_tumorPurity.txt")
 
 listInput <- list(paired$V1,unpaired$V1,all$V1)
 names(listInput) <- c("paired","unpaired","all")
+
+#verify that you have created the dir plots_DEA_comparison_datasets first
 
 pdf("./plots_DEA_comparison_dataset/overlapDataset_LUAD_limma_up.pdf",width=10, height=7, onefile = FALSE)
 upset(fromList(listInput), order.by = "freq",text.scale = c(2,3,2,1.8,3,3),
