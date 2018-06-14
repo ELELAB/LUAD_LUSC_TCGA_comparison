@@ -3,4 +3,6 @@ The folders LUAD and LUSC are a copy of the 2-DEA_TCGA folder and the user needs
 
 For the calculation of the DE gene list using a consensus among the three methods:
 
-(1)  consensus_three_methods.R   
+(1)  consensus_three_methods.R
+
+In alternative, the user can follow the scripts in 2-DEA_TCGA   
