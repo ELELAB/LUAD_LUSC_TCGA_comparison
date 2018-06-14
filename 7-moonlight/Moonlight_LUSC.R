@@ -1,5 +1,4 @@
-#source("https://bioconductor.org/biocLite.R")
-#biocLite("MoonlightR")
+#remember to setwd("~/7-moonlight")
 library("MoonlightR")
 #####prediction TSG and OGs######
 
