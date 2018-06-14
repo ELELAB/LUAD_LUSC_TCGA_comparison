@@ -1,3 +1,7 @@
+#this script needs to be run after performing the DEA with the three pipelines
+##the user also will need to work with the same structure of directories used in this repository to be able to run the scripts as they are
+#setwd("~/2-DEA_TCGA")
+#to run after the script comparison_FC_FDR.R
 library(ggplot2)
 
 #-----------------------------------------------------------------------
@@ -49,6 +53,7 @@ dataframe_compare_edgeR_limma <-function(dataframe){
 up_LUAD <- read.csv("comparison_FC_FDR_up_paired_LUAD.csv",row.names = 1)
 up_LUAD <- dataframe_compare_edgeRTCGA("limma",up_LUAD)
 #scatterplot to compare logFC
+#verify that you have created the folder scatterplots
 pdf("./scatterplots/scatterplot_up_paired_LUAD_limma.pdf", width=10, height=7)
 ggplot(up_LUAD, aes(x=logFC_edgeRTCGA,y=logFC_limma,colour=legend))+geom_point()+scale_colour_manual(values=c("red","dark green","dark turquoise","purple"))+
   xlab("logFC_edgeR-TCGAbiolinks")+ylab("logFC_limma")+

@@ -1,3 +1,7 @@
+#this script needs to be run after performing the DEA with the three pipelines
+#the user also will need to work with the same structure of directories used in this repository to be able to run the scripts as they are
+#setwd("~/2-DEA_TCGA")
+
 #-------------------------------------------------------------------
 
 # VennDiagram that compare LUAD-LUSC
@@ -36,30 +40,30 @@ VennDiagram_LUAD_LUSC <- function(listLUAD,listLUSC,direction,dataset){
 # up paired 
 #--------------------------------------------------------------------------------
 
-up_LUAD <- "../paired/overlap_edgeR-edgeRTCGA-limma_up_paired_LUAD.txt"
-up_LUSC <- "../paired/overlap_edgeR-edgeRTCGA-limma_up_paired_LUSC.txt"
+up_LUAD <- "./plots_DEA_comparison_methods/overlap_edgeR-edgeRTCGA-limma_up_paired_plots_DEA_comparison_methods_LUAD.txt"
+up_LUSC <- "./plots_DEA_comparison_methods/overlap_edgeR-edgeRTCGA-limma_up_paired_plots_DEA_comparison_methods_LUSC.txt"
 VennDiagram_LUAD_LUSC(up_LUAD,up_LUSC,"up","paired")
 
 #----------------------------------------------------------------------------------
 # down paired
 #---------------------------------------------------------------------------------
 
-down_LUAD <- "../paired/overlap_edgeR-edgeRTCGA-limma_down_paired_LUAD.txt"
-down_LUSC <- "../paired/overlap_edgeR-edgeRTCGA-limma_down_paired_LUSC.txt"
+down_LUAD <- "./plots_DEA_comparison_methods/overlap_edgeR-edgeRTCGA-limma_down_paired_plots_DEA_comparison_methods_LUAD.txt"
+down_LUSC <- "./plots_DEA_comparison_methods/overlap_edgeR-edgeRTCGA-limma_down_paired_plots_DEA_comparison_methods_LUSC.txt"
 VennDiagram_LUAD_LUSC(down_LUAD,down_LUSC,"down","paired")
 
 
 #----------------------------------------------------------------------------------
 #up all
 #----------------------------------------------------------------------------------
-up_LUAD <- "../all/overlap_edgeR-edgeRTCGA-limma_up_all_LUAD.txt"
-up_LUSC <- "../all/overlap_edgeR-edgeRTCGA-limma_up_all_LUSC.txt"
+up_LUAD <- "./plots_DEA_comparison_methods/overlap_edgeR-edgeRTCGA-limma_up_all_plots_DEA_comparison_methods_LUAD.txt"
+up_LUSC <- "./plots_DEA_comparison_methods/overlap_edgeR-edgeRTCGA-limma_up_all_plots_DEA_comparison_methods_LUSC.txt"
 VennDiagram_LUAD_LUSC(up_LUAD,up_LUSC,"up","all")
 
 #----------------------------------------------------------------------------------
 #down all
 #----------------------------------------------------------------------------------
-down_LUAD <- "../all/overlap_edgeR-edgeRTCGA-limma_down_all_LUAD.txt"
-down_LUSC <- "../all/overlap_edgeR-edgeRTCGA-limma_down_all_LUSC.txt"
+down_LUAD <- "./plots_DEA_comparison_methods/overlap_edgeR-edgeRTCGA-limma_down_all_plots_DEA_comparison_methods_LUAD.txt"
+down_LUSC <- "./plots_DEA_comparison_methods/overlap_edgeR-edgeRTCGA-limma_down_all_plots_DEA_comparison_methods_LUSC.txt"
 VennDiagram_LUAD_LUSC(down_LUAD,down_LUSC,"down","all")
 

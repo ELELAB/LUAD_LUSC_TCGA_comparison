@@ -17,5 +17,6 @@ For analyses of the data and production of figures such as the ones used in Figu
 (4)  VennDiagram_three_methods.R
 (5)  comparison_FC_FDR.R 
 (6)  scatterplot.R
+(7) final_DEgene_sets.R
 
 NB In the folder LUAD_LUSC_DEA_revised the alternative scripts for the LIMMA-voom step described in the Methods of the article is also provided.
