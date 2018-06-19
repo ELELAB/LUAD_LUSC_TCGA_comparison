@@ -5,9 +5,14 @@ data (GTEx+ TCGA). Meta data and gene expression data are saved into .RData file
 
 * Gene names in the data produced have been strapped off their version number ( content after "." in ENSG ids), please
 edit script if you want gene IDs to remain untouched.
----> comment line 90 in both files
 
 * After preparation, data is discordance-free and contain only samples with 60% tumor purity or more
 
-(1) run first the scripts unifiedLUAD.R and unifiedLUSC.R in LUAD AND LUSC directory
-(2)
+(1) run first the scripts unifiedLUAD.R and unifiedLUSC.R in LUAD AND LUSC directory, respectively. We also provided the option to apply the Rail transformation suggested by recount developers.
+(2) go to LUAD or LUSC sub-folders to continue with the DE analyses 
+(3) then go the the VennDiagram_unified_LUAD-LUSC  subfolder to define the genes unique for LUAD and LUSC, respectively
+(4) finally use the DEGcomparison_unified-tcga subfolder to compare these results with the one from the DEA on TCGA datasets
+
+NOTES
+(1) in the LUSC folder, the user will need to have the file with information on the LUSC discordant samples.
+
