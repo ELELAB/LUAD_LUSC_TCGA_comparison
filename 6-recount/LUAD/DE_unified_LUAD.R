@@ -1,9 +1,8 @@
-# created by Marta 10/01/2018
-
+#setwd("~/6-recount/LUAD")
 library(SummarizedExperiment)
 library(TCGAbiolinks)
 library(biomaRt)
-source("/data/user/shared_projects/luad_lusc_2018/marta/TCGAbiolinks_functions.R")
+source("../../1-download_preprocessing/TCGAbiolinks_functions.R")
 
 load("gtex.RData")
 dim(eset.gtex)
@@ -70,7 +69,7 @@ condition <- joint_IDs$condition[match(colnames(eset.all.NF),as.character(joint_
 tss <- as.factor(as.character(joint_IDs$tss[match(colnames(eset.all.NF),as.character(joint_IDs$uid))]))
 
 
-# limma
+# limma - you need to have the sub-folder limma already created
 
 limma_name <- "./limma/limma_unified_LUAD_tss.csv"
 up_name <- "./limma/up_limma_unified_LUAD_tss.txt"

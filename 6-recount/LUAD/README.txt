@@ -1,4 +1,3 @@
-
 DE_unified_LUAD.r script perform the DEA using limma package and all the results are included in the limma folder.
 Before normalization and filtering steps, only protein-coding genes were retrieved (using biomaRt package).
 
