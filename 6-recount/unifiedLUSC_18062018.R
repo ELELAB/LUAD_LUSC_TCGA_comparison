@@ -32,6 +32,17 @@ dataSmNT.lusc <- TCGAquery_SampleTypes(barcode = samplesDown.lusc,
                                              typesample = "NT")
 
 
+query.lusc2 <- GDCquery(project = "TCGA-LUAD",
+                        data.category = "Transcriptome Profiling",
+                        data.type = "Gene Expression Quantification", 
+                        workflow.type = "HTSeq - Counts",
+                        barcode = c(dataSmTP.lusc, dataSmNT.lusc))
+
+
+GDCdownload(query=query.lusc2)
+
+dataPrep1.lusc <- GDCprepare(query = query.lusc2, 
+                             save = TRUE )
 
 #####getting samples with more than 60% tumor purity and removing discordant samples
 discordant.lusc<-read.table("./LUSC/discordant_samples.txt",stringsAsFactors=FALSE)$V1

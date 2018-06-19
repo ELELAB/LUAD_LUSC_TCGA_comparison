@@ -32,6 +32,21 @@ dataSmNT.luad <- TCGAquery_SampleTypes(barcode = samplesDown.luad,
                                              typesample = "NT")
 
 
+
+query.luad2 <- GDCquery(project = "TCGA-LUAD",
+                             data.category = "Transcriptome Profiling",
+                            data.type = "Gene Expression Quantification", 
+                           workflow.type = "HTSeq - Counts",
+                          barcode = c(dataSmTP.luad, dataSmNT.luad))
+
+
+GDCdownload(query=query.luad2)
+
+dataPrep1.luad <- GDCprepare(query = query.luad2, 
+                                  save = TRUE )
+
+
+
 #####getting samples with more than 60% tumor purity and removing discordant samples
 
 tcga.barcodes<-c(dataSmTP.luad, dataSmNT.luad)
