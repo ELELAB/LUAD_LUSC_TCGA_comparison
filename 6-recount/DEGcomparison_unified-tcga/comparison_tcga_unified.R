@@ -1,4 +1,4 @@
-
+#setwd("~/6-recount/DEGcomparison_unified-tcga/")
 library(VennDiagram)
 #type1=tcga
 #type2=unified
@@ -35,29 +35,30 @@ return ("Venn Diagram done!")
 ####################
 
 # LUAD up
-setwd("/data/user/shared_projects/luad_lusc_2018/simo_recount/DEGcomparison_unified-tcga/LUAD")
-up_luad_tcga <- "../../../marta/LUAD/all/limma/up_limma_LUAD_all_tss_tumorPurity.txt"
+setwd("~/6-recount/DEGcomparison_unified-tcga/LUAD/")
+
+up_luad_tcga <- "../../../2-DEA_TCGA/LUAD/all/up_limma_LUAD_all_tss_tumorPurity.txt"
 up_luad_unified <- "../../LUAD/limma/up_limma_unified_LUAD_tss.txt"
 VennDiagram_comparison_unified_tcga(up_luad_tcga,up_luad_unified,"tcga","unified","LUAD","up")
 
 
 # LUAD down
-down_luad_tcga <- "../../../marta/LUAD/all/limma/down_limma_LUAD_all_tss_tumorPurity.txt"
+down_luad_tcga <- "../../../2-DEA_TCGA/LUAD/all/down_limma_LUAD_all_tss_tumorPurity.txt"
 down_luad_unified <- "../../LUAD/limma/down_limma_unified_LUAD_tss.txt"
 VennDiagram_comparison_unified_tcga(down_luad_tcga,down_luad_unified,"tcga","unified","LUAD","down")
 
 
 ##################
-setwd("/data/user/shared_projects/luad_lusc_2018/simo_recount/DEGcomparison_unified-tcga/LUSC")
+setwd("~/6-recount/DEGcomparison_unified-tcga/LUSC/")
 # LUSC up
 
-up_lusc_tcga <- "../../../marta/LUSC/all/limma/up_limma_LUSC_all_tss_tumorPurity.txt"
+up_lusc_tcga <- "../../../2-DEA_TCGA/LUSC/all/up_limma_LUSC_all_tss_tumorPurity.txt"
 up_lusc_unified <- "../../LUSC/limma/up_limma_unified_LUSC_tss.txt"
 VennDiagram_comparison_unified_tcga(up_lusc_tcga,up_lusc_unified,"tcga","unified","LUSC","up")
 
 #down
 
-down_lusc_tcga <- "../../../marta/LUSC/all/limma/down_limma_LUSC_all_tss_tumorPurity.txt"
+down_lusc_tcga <- "../../../2-DEA_TCGA/LUSC/all/limma/down_limma_LUSC_all_tss_tumorPurity.txt"
 down_lusc_unified <- "../../LUSC/limma/down_limma_unified_LUSC_tss.txt"
 VennDiagram_comparison_unified_tcga(down_lusc_tcga,down_lusc_unified,"tcga","unified","LUSC","down")
 

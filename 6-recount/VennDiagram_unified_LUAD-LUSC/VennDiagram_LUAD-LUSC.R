@@ -1,5 +1,4 @@
-# created by Marta (16/01/18)
-
+#setwd("~/6-recount/VennDiagram_unified_LUAD-LUSC/")
 VennDiagram_LUAD_LUSC <- function(listLUAD,listLUSC,direction){
   
   listLUAD<- read.table(listLUAD,col.names = "genes")
