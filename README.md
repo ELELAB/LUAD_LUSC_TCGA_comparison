@@ -2,8 +2,9 @@ Computational Biology Laboratory, Danish Cancer Society Research Center, Strandb
 
 Repository associated to the publication:
 
-O-glycosylation of mucins and oncogenic pathways to evade antitumor immune response as distinct signatures of lung cancer types
-Marta Lucchetta, Isabelle da Piedade, Mohamed Mounir, Marina Vabistsevits, Thilde Terkelsen, Elena Papaleo*, submitted for publication
+Different molecular signatures in lung cancer types from integrative bioinformatic analyses of RNASeq data
+Marta Lucchetta, Isabelle da Piedade, Mohamed Mounir, Marina Vabistsevits, Thilde Terkelsen, Elena Papaleo*, bioRxiv, doi: https://doi.org/10.1101/501569
+
 
 corresponding author: Elena Papaleo, elenap@cancer.dk
 
@@ -13,8 +14,9 @@ The repository contains the following folders which need to be used sequentially
 
 (1) 1-download - here the download and preparation of the datasets is carried out 
 (2) 2-DEA_TCGA - here the differential expression analyses and the related plots are reported
+etc...
 
-
+PLEASE, CITE THE PUBLICATION ABOVE IF YOU USE THE SCRIPTS FOR YOUR OWN RESEARCH
 
 Requirements:
 
