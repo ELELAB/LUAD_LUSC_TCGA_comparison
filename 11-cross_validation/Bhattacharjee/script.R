@@ -1,3 +1,7 @@
+#set the working directory
+
+setwd("~/cross-validation/Bhattacharjee")
+
 #######
 # gconvert
 
@@ -49,34 +53,46 @@ write.csv(dat1Collapsed,"collapsed_data.csv")
 
 dat1Collapsed <- read.csv("collapsed_data.csv", row.names = 1)
 
-
 # retain only the genes of interest
-gene_list <- c("MUC5","BHABP2","MUC21","KCNK5","ICA1","CSTA","P2RY1","ANXA8","FZD7","ITGA6",
-               "CHST7","RND3","ACOX2","ALDOC","AQP5","ARSE","FABP5","SIPA1L2","SLC1A3","SLC2A9")
+gene_list <- c("MUC5B","HABP2","MUC21","KCNK5","ICA1","CSTA","P2RY1","ANXA8","FZD7","ITGA6",
+               "CHST7","RND3","ACOX2","ALDOC","AQP5","ARSE","FABP5","SIPA1L2","SLC1A3","SLC2A9", "NRCAM","AGR2", "SPDEF")
 
 dat1Collapsed <- dat1Collapsed[which(rownames(dat1Collapsed) %in% gene_list),]
+
+dat1Collapsed_scaled <- scale(dat1Collapsed)
+
 
 ################
 # clustering
 #################
-
 library(gplots)
+
 mydist=function(c) {dist(c,method="euclidean")}
 myclust=function(c) {hclust(c,method="complete")}
 # plot heatmap
 clab <- rep("magenta",ncol(dat1Collapsed))
 clab[grep("SQ",colnames(dat1Collapsed))] <- "cyan"
 
-pdf("heatmap_cross_validation_Bhattacharjee.pdf")
-
-heatmap.2(as.matrix(dat1Collapsed), distfun = mydist, hclustfun = myclust,
-          ColSideColors = clab, trace = "none", density.info="none", labCol = FALSE,
-          col= colorRampPalette(c("white", "blue"))( 100 ), margins =c(10,7))
+pdf("heatmap_Bhattacharjee_allGenes.pdf")
+heatmap.2(dat1Collapsed_scaled, scale = "none", distfun = mydist,
+          hclustfun = myclust, labCol = FALSE, ColSideColors = clab, 
+          trace = "none", density.info = "none", margins = c(12,10))
 par(lend = 1) 
 legend("topright", legend = c("LUAD","LUSC"), col = c("magenta","cyan"),
        lty = 1,lwd = 10, border = FALSE, bty="n", y.intersp = 0.7, cex=0.9)
-
 dev.off()
 
+###-------------------
+#retain the genes of interest
+dat1Collapsed_scaled <- dat1Collapsed_scaled[c('ALDOC','ARSE','ANXA8',"CSTA"),]
+
+pdf("heatmap_Bhattacharjee.pdf")
+heatmap.2(dat1Collapsed_scaled, scale = "none", distfun = mydist,
+          hclustfun = myclust, labCol = FALSE, ColSideColors = clab, 
+          trace = "none", density.info = "none", margins = c(10,7))
+par(lend = 1) 
+legend("topright", legend = c("LUAD","LUSC"), col = c("magenta","cyan"),
+       lty = 1,lwd = 10, border = FALSE, bty="n", y.intersp = 0.7, cex=0.9)
+dev.off()
 
 

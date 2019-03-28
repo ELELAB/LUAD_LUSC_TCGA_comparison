@@ -1,3 +1,7 @@
+#set the working directory
+
+setwd("~/cross-validation/GSE33532")
+
 library(gProfileR)
 library(WGCNA)
 
@@ -36,25 +40,28 @@ write.csv(dat1Collapsed,file="collapsed_data.csv")
 
 dat1Collapsed <- read.csv("collapsed_data.csv",row.names = 1)
 # retain only the genes of interest
-gene_list <- c("MUC5","BHABP2","MUC21","KCNK5","ICA1","CSTA","P2RY1","ANXA8","FZD7","ITGA6",
-               "CHST7","RND3","ACOX2","ALDOC","AQP5","ARSE","FABP5","SIPA1L2","SLC1A3","SLC2A9")
+
+gene_list <- c("KCNK5","ICA1","CSTA","P2RY1","FZD7","CHST7","RND3","ACOX2","ARSE","SLC2A9","SPDEF", "MUC5B","HABP2")
 
 dat1Collapsed <- dat1Collapsed[which(rownames(dat1Collapsed) %in% gene_list),]
 
+################
+# clustering
+#################
 library(gplots)
+
 mydist=function(c) {dist(c,method="euclidean")}
 myclust=function(c) {hclust(c,method="complete")}
 # plot heatmap
 clab <- rep("magenta",ncol(dat1Collapsed))
 clab[grep("LUSC",colnames(dat1Collapsed))] <- "cyan"
 
-pdf("heatmap_cross_validation.pdf")
 
-heatmap.2(as.matrix(dat1Collapsed), distfun = mydist, hclustfun = myclust,
-          ColSideColors = clab, trace = "none", density.info="none",
-          col= colorRampPalette(c("white", "blue"))( 150 ), margins =c(12,9))
+pdf("heatmap_GSE33532.pdf")
+heatmap.2(as.matrix(dat1Collapsed), scale = "none", distfun = mydist,
+          hclustfun = myclust, labCol = FALSE, ColSideColors = clab, 
+          trace = "none", density.info = "none", margins = c(10,9))
 par(lend = 1) 
-legend("topright", legend = c("LUAD","LUSC"), col = c("magenta","cyan"),
+legend('topright', legend = c("LUAD","LUSC"), col = c("magenta","cyan"),
        lty = 1,lwd = 10, border = FALSE, bty="n", y.intersp = 0.7, cex=0.9)
-
 dev.off()

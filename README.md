@@ -42,6 +42,8 @@ sva
 CEMiTools
 MoonlightR
 pamr
+ReactomePA
+ClusterProfiler
 
 NOTES:
 
