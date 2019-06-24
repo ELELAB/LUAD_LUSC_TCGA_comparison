@@ -1,0 +1,38 @@
+
+get_difference <- function(cellType,direction){
+
+luad <- read.table(paste0('./',cellType,'/',direction,'_edgeR_LUAD_',cellType,'.txt'))
+lusc <- read.table(paste0('./',cellType,'/',direction,'_edgeR_LUSC_',cellType,'.txt'))
+overlap <- intersect(luad$V1,lusc$V1)
+luad_only <- setdiff(luad$V1,overlap)
+write.table(luad_only,file = paste0('./',cellType,'/',direction,'_LUAD_only.txt'), quote = FALSE, row.names = F, col.names = F)
+lusc_only <- setdiff(lusc$V1,overlap)
+write.table(lusc_only,file = paste0('./',cellType,'/',direction,'_LUSC_only.txt'),quote = F, row.names = F, col.names = F)
+}
+
+#-----------------------------------------------------------------
+
+get_difference('Monocytic','down')
+get_difference('Monocytic','up')
+
+get_difference('B_lineage','down')
+get_difference('B_lineage','up')
+
+get_difference('Lymphocytes','down')
+get_difference('Lymphocytes','up')
+
+get_difference('Myeloid_cells','down')
+get_difference('Myeloid_cells','up')
+
+get_difference('Neutrophils','down')
+get_difference('Neutrophils','up')
+
+get_difference('Tcells','down')
+get_difference('Tcells','up')
+
+get_difference('Endothelial_cells','down')
+get_difference('Endothelial_cells','up')
+
+get_difference('Fibroblasts','down')
+get_difference('Fibroblasts','up')
+

@@ -1,0 +1,3 @@
+"ID","Description","GeneRatio","BgRatio","pvalue","p.adjust","qvalue","geneID","Count"
+"R-HSA-9028335","Activated NTRK2 signals through PI3K","3/112","6/7637",5.94767530655449e-05,0.0261548331029537,0.0231957492085872,"BDNF/GAB1/NTRK2",3
+"R-HSA-448706","Interleukin-1 processing","3/112","7/7637",0.000102971783869897,0.0261548331029537,0.0231957492085872,"CASP1/IL1A/IL1B",3
