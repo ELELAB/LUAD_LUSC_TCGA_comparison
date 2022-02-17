@@ -2,9 +2,9 @@ Computational Biology Laboratory, Danish Cancer Society Research Center, Strandb
 
 Repository associated to the publication:
 
-Different molecular signatures in lung cancer types from integrative bioinformatic analyses of RNASeq data
-Marta Lucchetta, Isabelle da Piedade, Mohamed Mounir, Marina Vabistsevits, Thilde Terkelsen, Elena Papaleo*, bioRxiv, doi: https://doi.org/10.1101/501569
-
+Distinct signatures of lung cancer types: aberrant mucin O-glycosylation and compromised immune response.
+Lucchetta M, da Piedade I, Mounir M, Vabistsevits M, Terkelsen T, Papaleo E*.
+BMC Cancer. 2019 Aug 20;19(1):824. doi: 10.1186/s12885-019-5965-x
 
 corresponding author: Elena Papaleo, elenap@cancer.dk
 
