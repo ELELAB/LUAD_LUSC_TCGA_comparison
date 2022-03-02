@@ -6,7 +6,7 @@ Distinct signatures of lung cancer types: aberrant mucin O-glycosylation and com
 Lucchetta M, da Piedade I, Mounir M, Vabistsevits M, Terkelsen T, Papaleo E*.
 BMC Cancer. 2019 Aug 20;19(1):824. doi: 10.1186/s12885-019-5965-x
 
-corresponding author: Elena Papaleo, elenap@cancer.dk
+corresponding author: Elena Papaleo, elenap-at-cancer.dk
 
 This repository contains curated RNASEQ data from tumor and normal solid tissue samples obtained from TCGA, and the recount2 initiative along  with their analyses. The repository was made with the intent of openly sharing both the raw input data used at the time of the analyses and the R-scripts employed to carry out the study.
 
